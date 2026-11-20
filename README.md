@@ -115,15 +115,7 @@ relation files.
   part and the clear candidate for a GPU port. RSA-110 is about 200
   times the 80-digit effort, about 29 hours on this box, so it
   belongs on a GPU machine, not here.
-- The BQN array kernels are blocked on this machine's CBQN build
-  (see Cross-checks). The RSA-Prime nodes are documented in DAG.md;
-  the GNFS-setup and QS cross-checks run as documented nodes, and
-  the BQN node is recorded as attempted-and-blocked.
-- The run needs a stable machine. Two earlier launches stop early
-  when the virtual machine is replaced during polynomial selection.
-  The driver resumes from completed stages, so a relaunch picks up
-  where the previous one stopped.
-
+- The BQN array kernels are not ran which is the main thing powering the DAG.
 ## Licensing
 
 The driver (`dag.py`), the documentation (`README.md`, `PAPER.md`,
