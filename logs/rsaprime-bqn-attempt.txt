@@ -1,0 +1,10 @@
+RSA-Prime BQN array kernels (verbatim, NOT rewritten)
+CBQN binary: ~/workspace/.tools/cbqn/cbqn, commit 588753c83963f5b1e9247bfba9c16758da22a348
+Attempt 1: cbqn -f bqn/fused-kernel.bqn
+  Error: Unknown characters: ∇ (nabla U+2207, used as gradient variable prefix ∇P, ∇S)
+Attempt 2: cbqn -f bqn/mobius-bridge.bqn
+  Error: Unknown characters: θ (theta U+03B8)
+Probe: minimal `∇ ← 5` and `θ ← 7` both rejected by this CBQN build with "Unknown characters".
+Verdict: BLOCKED on this VM's CBQN. The files are the owner's, taken verbatim, and are not
+rewritten to fit the tool. The array work in the run is done by CADO-NFS (las sieving,
+bwc linear algebra) and the Factor QS engine instead. Node recorded as attempted-and-blocked.

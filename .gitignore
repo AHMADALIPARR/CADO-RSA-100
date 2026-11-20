@@ -1,0 +1,18 @@
+# CADO-NFS source and build (vendored third-party code).
+# CADO-NFS is referenced by commit (see README.md), not tracked here.
+src/
+
+# Intermediate work data (relations, matrices, workdirs).
+# Only the RSA-100 factors and verification are tracked.
+work/*
+!work/rsa100
+work/rsa100/*
+!work/rsa100/factors.txt
+!work/rsa100/verify.txt
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# DAG run stamps
+stamps/

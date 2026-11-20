@@ -1,0 +1,12 @@
+RSA-Prime QS cross-check (Factor, verbatim engine)
+Target: 288986332189663757016053995249 (30 digits)
+Known factors: p=812790250833157, q=355548472552957 (generated locally, product verified)
+Command: factor -roots=RSA-Prime/factor -e '"rsa-omega.qs" require ... 288986332189663757016053995249 qs ...'
+Result:
+  factor: 812790250833157
+  status: "found"
+  relations: 638
+  blocks: 188
+  candidates: 21339
+Wall time: 13.0 s real (includes Factor startup; user 5.3 s)
+Verdict: QS engine factors the 30-digit semiprime correctly; factor matches known p.

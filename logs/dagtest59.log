@@ -1,0 +1,82 @@
+[      0.0s] target N = 90377629292003121684002147101760858109247336549001090677693 (59 digits)
+[      0.0s] params = src/parameters/factor/params.c60
+[      0.0s] derived: Bf=524288 Bg=262144 area=3.249e+10 poly_chunks=2 rels_wanted=49264
+[      0.0s] PHASE A: polynomial selection (admin-range sub-DAG) + factor base + free relations
+[      0.0s] START polyselect-0
+[      0.0s] START polyselect-1
+[      0.1s] DONE  polyselect-1 (0.0s)
+[      0.3s] DONE  polyselect-0 (0.3s)
+[      0.3s] START polyselect-ropt-0
+[      0.3s] START polyselect-ropt-1
+[      0.3s] DONE  polyselect-ropt-1 (0.0s)
+[     13.6s] DONE  polyselect-ropt-0 (13.3s)
+[     13.6s] polyselect: 42 optimized polys, best MurphyE=1.089e-05
+[     13.6s] START polyselect-pick
+[     13.6s] DONE  polyselect-pick (0.0s)
+[     13.6s] START factorbase
+[     13.6s] START freerel
+[     13.7s] DONE  factorbase (0.1s)
+[     14.0s] DONE  freerel (0.4s)
+[     14.0s] PHASE B: sieving (q-interval sub-DAG, dynamically expanded)
+[     14.0s] START sieve-61961-64000
+[     14.0s] START sieve-64000-66000
+[     20.0s] DONE  sieve-64000-66000 (6.0s)
+[     20.3s] DONE  sieve-61961-64000 (6.3s)
+[     20.3s] sieving: 2 interval(s), 11584 relations (wanted 49264), qnext=66000
+[     20.3s] START sieve-66000-68000
+[     20.3s] START sieve-68000-70000
+[     25.6s] DONE  sieve-68000-70000 (5.3s)
+[     25.9s] DONE  sieve-66000-68000 (5.6s)
+[     26.0s] sieving: 4 interval(s), 21955 relations (wanted 49264), qnext=70000
+[     26.0s] START sieve-70000-72000
+[     26.0s] START sieve-72000-74000
+[     32.1s] DONE  sieve-72000-74000 (6.1s)
+[     32.1s] DONE  sieve-70000-72000 (6.1s)
+[     32.1s] sieving: 6 interval(s), 33345 relations (wanted 49264), qnext=74000
+[     32.1s] START sieve-74000-76000
+[     32.1s] START sieve-76000-78000
+[     37.8s] DONE  sieve-76000-78000 (5.6s)
+[     37.9s] DONE  sieve-74000-76000 (5.7s)
+[     38.0s] sieving: 8 interval(s), 43673 relations (wanted 49264), qnext=78000
+[     38.0s] START sieve-78000-80000
+[     38.0s] START sieve-80000-82000
+[     43.7s] DONE  sieve-80000-82000 (5.7s)
+[     43.7s] DONE  sieve-78000-80000 (5.7s)
+[     44.0s] sieving: 10 interval(s), 54305 relations (wanted 49264), qnext=82000
+[     44.0s] PHASE B done: 10 intervals, 54305 relations
+[     44.0s] PHASE C: filtering (dup1 -> dup2 slices -> purge -> merge -> replay)
+[     44.0s] START dup1
+[     44.3s] DONE  dup1 (0.4s)
+[     44.3s] dup1 produced 2 slice(s)
+[     44.4s] START dup2-slice0
+[     44.4s] START dup2-slice1
+[     45.2s] DONE  dup2-slice1 (0.8s)
+[     45.2s] DONE  dup2-slice0 (0.8s)
+[     45.2s] START purge
+[     45.7s] DONE  purge (0.5s)
+[     45.7s] START merge
+[     46.6s] DONE  merge (0.9s)
+[     46.6s] START replay
+[     46.9s] DONE  replay (0.3s)
+[     46.9s] PHASE D: linear algebra (bwc block sub-DAG) + characters + sqrt
+[     46.9s] START linalg-bwc
+[     49.2s] DONE  linalg-bwc (2.3s)
+[     49.2s] START characters
+[     49.5s] DONE  characters (0.3s)
+[     49.5s] START sqrt-ab
+[     49.8s] DONE  sqrt-ab (0.3s)
+[     49.8s] sqrt: 30 kernel dependenc(ies)
+[     49.8s] START sqrt-dep0
+[     49.8s] START sqrt-dep1
+[     53.5s] DONE  sqrt-dep0 (3.7s)
+[     53.7s] DONE  sqrt-dep1 (3.9s)
+[     53.7s] sqrt: tried deps 0..1, factors=not yet
+[     53.7s] START sqrt-dep2
+[     53.7s] START sqrt-dep3
+[     57.9s] DONE  sqrt-dep2 (4.2s)
+[     58.4s] DONE  sqrt-dep3 (4.7s)
+[     58.4s] sqrt: tried deps 0..3, factors=found
+[     58.4s] VERIFY: factors from the sqrt logs
+[     58.4s] factors: 260938498861057 588120598053661 760926063870977 773951836515617
+[     58.4s] VERIFY: product==N: True; all prime: True
+[     58.4s] DAG COMPLETE in 58.4s

@@ -1,0 +1,297 @@
+[      0.0s] target N = 1522605027922533360535618378132637429718068114961380688657908494580122963258952897654000350692006139 (100 digits)
+[      0.0s] params = src/parameters/factor/params.c100
+[      0.0s] derived: Bf=67108864 Bg=33554432 area=3.775e+11 poly_chunks=28 rels_wanted=3600000
+[      0.0s] PHASE A: polynomial selection (admin-range sub-DAG) + factor base + free relations
+[      0.0s] using supplied polynomial src/parameters/polynomials/c100.poly -> /home/hatch/workspace/cado-factor/work/rsa100/poly (polyselect skipped)
+[      0.0s] START factorbase
+[      0.0s] START freerel
+[      0.6s] DONE  factorbase (0.6s)
+[     23.2s] DONE  freerel (23.1s)
+[     23.2s] PHASE B: sieving (q-interval sub-DAG, dynamically expanded)
+[     23.2s] START sieve-180000-185000
+[     23.2s] START sieve-185000-190000
+[     83.9s] DONE  sieve-185000-190000 (60.7s)
+[     85.2s] DONE  sieve-180000-185000 (62.1s)
+[     85.4s] sieving: 2 interval(s), 100501 relations (wanted 3600000), qnext=190000
+[     85.4s] START sieve-190000-195000
+[     85.4s] START sieve-195000-200000
+[    141.4s] DONE  sieve-195000-200000 (56.0s)
+[    144.8s] DONE  sieve-190000-195000 (59.4s)
+[    144.9s] sieving: 4 interval(s), 195388 relations (wanted 3600000), qnext=200000
+[    144.9s] START sieve-200000-205000
+[    144.9s] START sieve-205000-210000
+[    198.2s] DONE  sieve-200000-205000 (53.3s)
+[    200.9s] DONE  sieve-205000-210000 (56.0s)
+[    201.0s] sieving: 6 interval(s), 285991 relations (wanted 3600000), qnext=210000
+[    201.0s] START sieve-210000-215000
+[    201.0s] START sieve-215000-220000
+[    249.3s] DONE  sieve-215000-220000 (48.3s)
+[    252.4s] DONE  sieve-210000-215000 (51.4s)
+[    252.5s] sieving: 8 interval(s), 369730 relations (wanted 3600000), qnext=220000
+[    252.5s] START sieve-220000-225000
+[    252.5s] START sieve-225000-230000
+[    308.7s] DONE  sieve-220000-225000 (56.2s)
+[    309.2s] DONE  sieve-225000-230000 (56.7s)
+[    309.4s] sieving: 10 interval(s), 460274 relations (wanted 3600000), qnext=230000
+[    309.4s] START sieve-230000-235000
+[    309.4s] START sieve-235000-240000
+[    357.3s] DONE  sieve-235000-240000 (48.0s)
+[    359.8s] DONE  sieve-230000-235000 (50.4s)
+[    359.9s] sieving: 12 interval(s), 539867 relations (wanted 3600000), qnext=240000
+[    359.9s] START sieve-240000-245000
+[    359.9s] START sieve-245000-250000
+[    410.2s] DONE  sieve-245000-250000 (50.3s)
+[    412.1s] DONE  sieve-240000-245000 (52.2s)
+[    412.2s] sieving: 14 interval(s), 622868 relations (wanted 3600000), qnext=250000
+[    412.2s] START sieve-250000-255000
+[    412.2s] START sieve-255000-260000
+[    461.5s] DONE  sieve-255000-260000 (49.3s)
+[    462.2s] DONE  sieve-250000-255000 (50.0s)
+[    462.3s] sieving: 16 interval(s), 702513 relations (wanted 3600000), qnext=260000
+[    462.3s] START sieve-260000-265000
+[    462.3s] START sieve-265000-270000
+[    509.5s] DONE  sieve-260000-265000 (47.2s)
+[    510.5s] DONE  sieve-265000-270000 (48.1s)
+[    510.6s] sieving: 18 interval(s), 778507 relations (wanted 3600000), qnext=270000
+[    510.6s] START sieve-270000-275000
+[    510.6s] START sieve-275000-280000
+[    557.5s] DONE  sieve-270000-275000 (47.0s)
+[    559.9s] DONE  sieve-275000-280000 (49.4s)
+[    560.1s] sieving: 20 interval(s), 852855 relations (wanted 3600000), qnext=280000
+[    560.1s] START sieve-280000-285000
+[    560.1s] START sieve-285000-290000
+[    613.0s] DONE  sieve-285000-290000 (52.9s)
+[    614.9s] DONE  sieve-280000-285000 (54.8s)
+[    615.1s] sieving: 22 interval(s), 936261 relations (wanted 3600000), qnext=290000
+[    615.1s] START sieve-290000-295000
+[    615.1s] START sieve-295000-300000
+[    660.9s] DONE  sieve-295000-300000 (45.8s)
+[    662.8s] DONE  sieve-290000-295000 (47.7s)
+[    662.9s] sieving: 24 interval(s), 1008933 relations (wanted 3600000), qnext=300000
+[    662.9s] START sieve-300000-305000
+[    662.9s] START sieve-305000-310000
+[    716.5s] DONE  sieve-305000-310000 (53.7s)
+[    717.1s] DONE  sieve-300000-305000 (54.3s)
+[    717.2s] sieving: 26 interval(s), 1090326 relations (wanted 3600000), qnext=310000
+[    717.2s] START sieve-310000-315000
+[    717.2s] START sieve-315000-320000
+[    767.7s] DONE  sieve-310000-315000 (50.5s)
+[    769.1s] DONE  sieve-315000-320000 (51.9s)
+[    769.3s] sieving: 28 interval(s), 1168682 relations (wanted 3600000), qnext=320000
+[    769.3s] START sieve-320000-325000
+[    769.3s] START sieve-325000-330000
+[    818.8s] DONE  sieve-320000-325000 (49.5s)
+[    819.0s] DONE  sieve-325000-330000 (49.7s)
+[    819.1s] sieving: 30 interval(s), 1243437 relations (wanted 3600000), qnext=330000
+[    819.1s] START sieve-330000-335000
+[    819.1s] START sieve-335000-340000
+[    867.1s] DONE  sieve-330000-335000 (48.0s)
+[    867.8s] DONE  sieve-335000-340000 (48.6s)
+[    867.9s] sieving: 32 interval(s), 1315862 relations (wanted 3600000), qnext=340000
+[    867.9s] START sieve-340000-345000
+[    867.9s] START sieve-345000-350000
+[    915.1s] DONE  sieve-345000-350000 (47.3s)
+[    915.7s] DONE  sieve-340000-345000 (47.9s)
+[    915.8s] sieving: 34 interval(s), 1387001 relations (wanted 3600000), qnext=350000
+[    915.8s] START sieve-350000-355000
+[    915.8s] START sieve-355000-360000
+[    963.6s] DONE  sieve-350000-355000 (47.8s)
+[    964.6s] DONE  sieve-355000-360000 (48.7s)
+[    964.7s] sieving: 36 interval(s), 1459121 relations (wanted 3600000), qnext=360000
+[    964.7s] START sieve-360000-365000
+[    964.7s] START sieve-365000-370000
+[   1010.2s] DONE  sieve-360000-365000 (45.5s)
+[   1011.4s] DONE  sieve-365000-370000 (46.8s)
+[   1011.5s] sieving: 38 interval(s), 1527106 relations (wanted 3600000), qnext=370000
+[   1011.5s] START sieve-370000-375000
+[   1011.5s] START sieve-375000-380000
+[   1054.3s] DONE  sieve-370000-375000 (42.8s)
+[   1055.5s] DONE  sieve-375000-380000 (44.0s)
+[   1055.6s] sieving: 40 interval(s), 1591201 relations (wanted 3600000), qnext=380000
+[   1055.6s] START sieve-380000-385000
+[   1055.6s] START sieve-385000-390000
+[   1100.8s] DONE  sieve-380000-385000 (45.2s)
+[   1101.6s] DONE  sieve-385000-390000 (46.0s)
+[   1101.7s] sieving: 42 interval(s), 1658811 relations (wanted 3600000), qnext=390000
+[   1101.7s] START sieve-390000-395000
+[   1101.7s] START sieve-395000-400000
+[   1144.1s] DONE  sieve-395000-400000 (42.4s)
+[   1145.6s] DONE  sieve-390000-395000 (43.9s)
+[   1145.7s] sieving: 44 interval(s), 1724118 relations (wanted 3600000), qnext=400000
+[   1145.7s] START sieve-400000-405000
+[   1145.7s] START sieve-405000-410000
+[   1190.3s] DONE  sieve-400000-405000 (44.6s)
+[   1191.8s] DONE  sieve-405000-410000 (46.1s)
+[   1191.9s] sieving: 46 interval(s), 1791205 relations (wanted 3600000), qnext=410000
+[   1191.9s] START sieve-410000-415000
+[   1191.9s] START sieve-415000-420000
+[   1237.6s] DONE  sieve-410000-415000 (45.7s)
+[   1238.3s] DONE  sieve-415000-420000 (46.3s)
+[   1238.4s] sieving: 48 interval(s), 1858344 relations (wanted 3600000), qnext=420000
+[   1238.4s] START sieve-420000-425000
+[   1238.4s] START sieve-425000-430000
+[   1280.5s] DONE  sieve-425000-430000 (42.2s)
+[   1283.7s] DONE  sieve-420000-425000 (45.3s)
+[   1283.8s] sieving: 50 interval(s), 1922796 relations (wanted 3600000), qnext=430000
+[   1283.8s] START sieve-430000-435000
+[   1283.8s] START sieve-435000-440000
+[   1329.8s] DONE  sieve-435000-440000 (46.0s)
+[   1331.2s] DONE  sieve-430000-435000 (47.5s)
+[   1331.3s] sieving: 52 interval(s), 1990022 relations (wanted 3600000), qnext=440000
+[   1331.3s] START sieve-440000-445000
+[   1331.3s] START sieve-445000-450000
+[   1375.3s] DONE  sieve-445000-450000 (44.0s)
+[   1377.2s] DONE  sieve-440000-445000 (45.9s)
+[   1377.3s] sieving: 54 interval(s), 2055989 relations (wanted 3600000), qnext=450000
+[   1377.3s] START sieve-450000-455000
+[   1377.3s] START sieve-455000-460000
+[   1423.8s] DONE  sieve-450000-455000 (46.5s)
+[   1424.7s] DONE  sieve-455000-460000 (47.4s)
+[   1424.8s] sieving: 56 interval(s), 2122281 relations (wanted 3600000), qnext=460000
+[   1424.8s] START sieve-460000-465000
+[   1424.8s] START sieve-465000-470000
+[   1463.2s] DONE  sieve-465000-470000 (38.4s)
+[   1466.1s] DONE  sieve-460000-465000 (41.3s)
+[   1466.2s] sieving: 58 interval(s), 2181316 relations (wanted 3600000), qnext=470000
+[   1466.2s] START sieve-470000-475000
+[   1466.2s] START sieve-475000-480000
+[   1512.0s] DONE  sieve-470000-475000 (45.8s)
+[   1512.2s] DONE  sieve-475000-480000 (46.0s)
+[   1512.3s] sieving: 60 interval(s), 2246590 relations (wanted 3600000), qnext=480000
+[   1512.3s] START sieve-480000-485000
+[   1512.3s] START sieve-485000-490000
+[   1551.9s] DONE  sieve-480000-485000 (39.6s)
+[   1553.4s] DONE  sieve-485000-490000 (41.1s)
+[   1553.5s] sieving: 62 interval(s), 2304452 relations (wanted 3600000), qnext=490000
+[   1553.5s] START sieve-490000-495000
+[   1553.5s] START sieve-495000-500000
+[   1597.6s] DONE  sieve-490000-495000 (44.1s)
+[   1598.4s] DONE  sieve-495000-500000 (44.9s)
+[   1598.5s] sieving: 64 interval(s), 2366331 relations (wanted 3600000), qnext=500000
+[   1598.5s] START sieve-500000-505000
+[   1598.5s] START sieve-505000-510000
+[   1638.2s] DONE  sieve-500000-505000 (39.7s)
+[   1641.3s] DONE  sieve-505000-510000 (42.8s)
+[   1641.4s] sieving: 66 interval(s), 2426154 relations (wanted 3600000), qnext=510000
+[   1641.4s] START sieve-510000-515000
+[   1641.4s] START sieve-515000-520000
+[   1685.2s] DONE  sieve-510000-515000 (43.8s)
+[   1685.6s] DONE  sieve-515000-520000 (44.2s)
+[   1685.7s] sieving: 68 interval(s), 2487312 relations (wanted 3600000), qnext=520000
+[   1685.7s] START sieve-520000-525000
+[   1685.7s] START sieve-525000-530000
+[   1729.5s] DONE  sieve-520000-525000 (43.8s)
+[   1730.0s] DONE  sieve-525000-530000 (44.3s)
+[   1730.1s] sieving: 70 interval(s), 2547478 relations (wanted 3600000), qnext=530000
+[   1730.1s] START sieve-530000-535000
+[   1730.1s] START sieve-535000-540000
+[   1774.3s] DONE  sieve-530000-535000 (44.2s)
+[   1776.6s] DONE  sieve-535000-540000 (46.4s)
+[   1776.7s] sieving: 72 interval(s), 2608929 relations (wanted 3600000), qnext=540000
+[   1776.7s] START sieve-540000-545000
+[   1776.7s] START sieve-545000-550000
+[   1821.0s] DONE  sieve-545000-550000 (44.3s)
+[   1821.3s] DONE  sieve-540000-545000 (44.7s)
+[   1821.5s] sieving: 74 interval(s), 2668785 relations (wanted 3600000), qnext=550000
+[   1821.5s] START sieve-550000-555000
+[   1821.5s] START sieve-555000-560000
+[   1863.5s] DONE  sieve-550000-555000 (42.1s)
+[   1866.1s] DONE  sieve-555000-560000 (44.6s)
+[   1866.1s] sieving: 76 interval(s), 2728494 relations (wanted 3600000), qnext=560000
+[   1866.1s] START sieve-560000-565000
+[   1866.1s] START sieve-565000-570000
+[   1905.8s] DONE  sieve-565000-570000 (39.7s)
+[   1907.8s] DONE  sieve-560000-565000 (41.7s)
+[   1907.9s] sieving: 78 interval(s), 2784518 relations (wanted 3600000), qnext=570000
+[   1907.9s] START sieve-570000-575000
+[   1907.9s] START sieve-575000-580000
+[   1949.9s] DONE  sieve-570000-575000 (42.0s)
+[   1950.5s] DONE  sieve-575000-580000 (42.6s)
+[   1950.6s] sieving: 80 interval(s), 2840936 relations (wanted 3600000), qnext=580000
+[   1950.6s] START sieve-580000-585000
+[   1950.6s] START sieve-585000-590000
+[   1991.5s] DONE  sieve-585000-590000 (41.0s)
+[   1992.1s] DONE  sieve-580000-585000 (41.6s)
+[   1992.2s] sieving: 82 interval(s), 2896504 relations (wanted 3600000), qnext=590000
+[   1992.2s] START sieve-590000-595000
+[   1992.2s] START sieve-595000-600000
+[   2031.4s] DONE  sieve-595000-600000 (39.2s)
+[   2034.4s] DONE  sieve-590000-595000 (42.2s)
+[   2034.5s] sieving: 84 interval(s), 2952902 relations (wanted 3600000), qnext=600000
+[   2034.5s] START sieve-600000-605000
+[   2034.5s] START sieve-605000-610000
+[   2080.4s] DONE  sieve-605000-610000 (45.9s)
+[   2080.6s] DONE  sieve-600000-605000 (46.0s)
+[   2080.7s] sieving: 86 interval(s), 3013544 relations (wanted 3600000), qnext=610000
+[   2080.7s] START sieve-610000-615000
+[   2080.7s] START sieve-615000-620000
+[   2119.3s] DONE  sieve-610000-615000 (38.6s)
+[   2121.9s] DONE  sieve-615000-620000 (41.2s)
+[   2122.0s] sieving: 88 interval(s), 3068780 relations (wanted 3600000), qnext=620000
+[   2122.0s] START sieve-620000-625000
+[   2122.0s] START sieve-625000-630000
+[   2161.0s] DONE  sieve-625000-630000 (39.1s)
+[   2163.4s] DONE  sieve-620000-625000 (41.5s)
+[   2163.5s] sieving: 90 interval(s), 3124706 relations (wanted 3600000), qnext=630000
+[   2163.5s] START sieve-630000-635000
+[   2163.5s] START sieve-635000-640000
+[   2199.6s] DONE  sieve-635000-640000 (36.1s)
+[   2203.4s] DONE  sieve-630000-635000 (39.9s)
+[   2203.5s] sieving: 92 interval(s), 3178802 relations (wanted 3600000), qnext=640000
+[   2203.5s] START sieve-640000-645000
+[   2203.5s] START sieve-645000-650000
+[   2244.1s] DONE  sieve-645000-650000 (40.6s)
+[   2245.8s] DONE  sieve-640000-645000 (42.3s)
+[   2245.9s] sieving: 94 interval(s), 3234259 relations (wanted 3600000), qnext=650000
+[   2245.9s] START sieve-650000-655000
+[   2245.9s] START sieve-655000-660000
+[   2286.9s] DONE  sieve-650000-655000 (41.0s)
+[   2287.4s] DONE  sieve-655000-660000 (41.4s)
+[   2287.5s] sieving: 96 interval(s), 3288538 relations (wanted 3600000), qnext=660000
+[   2287.5s] START sieve-660000-665000
+[   2287.5s] START sieve-665000-670000
+[   2327.6s] DONE  sieve-660000-665000 (40.2s)
+[   2327.9s] DONE  sieve-665000-670000 (40.5s)
+[   2328.0s] sieving: 98 interval(s), 3341401 relations (wanted 3600000), qnext=670000
+[   2328.0s] START sieve-670000-675000
+[   2328.0s] START sieve-675000-680000
+[   2368.9s] DONE  sieve-675000-680000 (40.9s)
+[   2369.7s] DONE  sieve-670000-675000 (41.7s)
+[   2369.8s] sieving: 100 interval(s), 3395618 relations (wanted 3600000), qnext=680000
+[   2369.8s] START sieve-680000-685000
+[   2369.8s] START sieve-685000-690000
+[   2408.2s] DONE  sieve-680000-685000 (38.4s)
+[   2410.2s] DONE  sieve-685000-690000 (40.4s)
+[   2410.3s] sieving: 102 interval(s), 3447373 relations (wanted 3600000), qnext=690000
+[   2410.3s] START sieve-690000-695000
+[   2410.3s] START sieve-695000-700000
+[   2451.4s] DONE  sieve-695000-700000 (41.1s)
+[   2453.4s] DONE  sieve-690000-695000 (43.1s)
+[   2453.5s] sieving: 104 interval(s), 3503447 relations (wanted 3600000), qnext=700000
+[   2453.5s] START sieve-700000-705000
+[   2453.5s] START sieve-705000-710000
+[   2494.3s] DONE  sieve-700000-705000 (40.8s)
+[   2494.6s] DONE  sieve-705000-710000 (41.1s)
+[   2494.7s] sieving: 106 interval(s), 3556720 relations (wanted 3600000), qnext=710000
+[   2494.7s] START sieve-710000-715000
+[   2494.7s] START sieve-715000-720000
+[   2530.4s] DONE  sieve-715000-720000 (35.7s)
+[   2531.2s] DONE  sieve-710000-715000 (36.5s)
+[   2531.3s] sieving: 108 interval(s), 3604342 relations (wanted 3600000), qnext=720000
+[   2531.3s] PHASE B done: 108 intervals, 3604342 relations
+[   2531.3s] PHASE C: filtering (dup1 -> dup2 slices -> purge -> merge -> replay)
+[   2531.3s] START dup1
+[   2544.2s] DONE  dup1 (13.0s)
+[   2544.2s] dup1 produced 2 slice(s)
+[   2548.8s] START dup2-slice0
+[   2548.8s] START dup2-slice1
+[   2590.0s] DONE  dup2-slice1 (41.2s)
+[   2590.4s] DONE  dup2-slice0 (41.7s)
+[   2590.4s] START purge
+[   2596.2s] FAIL  purge rc=2 (see /home/hatch/workspace/cado-factor/work/rsa100/logs/purge.log)
+Traceback (most recent call last):
+  File "/home/hatch/workspace/cado-factor/dag.py", line 743, in <module>
+    main()
+  File "/home/hatch/workspace/cado-factor/dag.py", line 596, in main
+    raise RuntimeError("purge failed")
+RuntimeError: purge failed

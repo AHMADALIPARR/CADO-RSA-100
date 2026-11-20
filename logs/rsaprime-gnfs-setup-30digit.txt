@@ -1,0 +1,9 @@
+RSA-Prime GNFS setup cross-check (Factor, verbatim engine)
+Target: 288986332189663757016053995249 (30 digits), degree 5, bounds 1000/1000
+Command: factor -roots=RSA-Prime/factor -e '"rsa-omega.gnfs" require ... 288986332189663757016053995249 5 1000 1000 gnfs-setup ...'
+Result:
+  poly f(m)==n: t
+  rational fb size: 168
+  algebraic fb size: 157
+  status: "partial: setup-only (no sieving/linalg/sqrt)"
+Verdict: base-m polynomial selection verified f(m)==n; factor bases built. Setup-only by design.

@@ -1,0 +1,443 @@
+[32;1mInfo[0m:root: Using default parameter file ./parameters/factor/params.c80
+[32;1mInfo[0m:root: No database exists yet
+[32;1mInfo[0m:Database: Database URI is db:sqlite3:///home/hatch/workspace/cado-factor/work/calib80/c80.db
+[32;1mInfo[0m:Database: Opened connection to database /home/hatch/workspace/cado-factor/work/calib80/c80.db
+[32;1mInfo[0m:root: Setting tasks.threads=2 based on --server-threads 2
+[32;1mInfo[0m:root: Setting tasks.sqrt.threads=1 in order to avoid RAM issues. You might want to set tasks.sqrt.threads=<something else> according to what your computer can do.
+[32;1mInfo[0m:root: tasks.threads = 2 [via tasks.threads]
+[32;1mInfo[0m:root: tasks.polyselect.threads = 2 [via tasks.polyselect.threads]
+[32;1mInfo[0m:root: tasks.sieve.las.threads = 2 [via tasks.sieve.las.threads]
+[32;1mInfo[0m:root: tasks.sieve.siqs.threads = 2 [via tasks.sieve.siqs.threads]
+[32;1mInfo[0m:root: tasks.linalg.bwc.threads = 2 [via tasks.threads]
+[32;1mInfo[0m:root: tasks.sqrt.threads = 1 [via tasks.sqrt.threads]
+[32;1mInfo[0m:root: slaves.scriptpath is /home/hatch/workspace/cado-factor/src/build/htch-runtime
+[32;1mInfo[0m:root: Command line parameters: ./cado-nfs.py 16722372257131115877945740911896196316950319396248402582614721355820926608175453 -t 2 -w /home/hatch/workspace/cado-factor/work/calib80
+[32;1mInfo[0m:root: If this computation gets interrupted, it can be resumed with ./cado-nfs.py /home/hatch/workspace/cado-factor/work/calib80/c80.parameters_snapshot.0
+[32;1mInfo[0m:Server Launcher: Adding htch-runtime to whitelist to allow clients on localhost to connect
+[32;1mInfo[0m:API server: server whitelist is ['127.0.0.1/32', '127.0.0.1/32']
+[32;1mInfo[0m:API server: Running from werkzeug (1 thread(s))
+[32;1mInfo[0m:Lattice Sieving: param rels_wanted is 0
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Factoring 16722372257131115877945740911896196316950319396248402582614721355820926608175453
+[32;1mInfo[0m:API server: Running on https://localhost:43065 (Press CTRL+C to quit))
+[32;1mInfo[0m:API server: You can start additional cado-nfs-client.py scripts with parameters: --server=https://localhost:43065 --certsha1=1ddd914bb8de042f0b82e036a72c3da9eebc4305
+[32;1mInfo[0m:API server: If you want to start additional clients, remember to add their hosts to server.whitelist
+[32;1mInfo[0m:Client Launcher: Starting client id localhost on host localhost
+[32;1mInfo[0m:Client Launcher: Running clients: localhost (Host localhost, PID 46275)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Starting
+[32;1mInfo[0m:Polynomial Selection (size optimized): 0 polynomials in queue from previous run
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_0-5000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_5000-10000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_10000-15000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_15000-20000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_20000-25000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_25000-30000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_30000-35000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_35000-40000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_40000-45000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_45000-50000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_0-5000 to client localhost
+[32;1mInfo[0m:API server: got request for file polyselect, which resolves to /home/hatch/workspace/cado-factor/src/build/htch-runtime/polyselect/polyselect
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_5000-10000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_10000-15000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 26 polynomials, added 23 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.830000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_0-5000 as ok (5.0% => ETA Unknown)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_50000-55000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 15 polynomials, added 4 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.760000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_5000-10000 as ok (10.0% => ETA Fri Nov 20 00:58:05 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_55000-60000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_60000-65000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_15000-20000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_20000-25000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_25000-30000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 17 polynomials, added 3 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.700000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_10000-15000 as ok (15.0% => ETA Fri Nov 20 00:57:39 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_65000-70000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 17 polynomials, added 3 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.690000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_15000-20000 as ok (20.0% => ETA Fri Nov 20 00:57:18 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_70000-75000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 19 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_20000-25000 as ok (25.0% => ETA Fri Nov 20 00:57:07 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_75000-80000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_30000-35000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_35000-40000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_40000-45000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 22 polynomials, added 2 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.660000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_25000-30000 as ok (30.0% => ETA Fri Nov 20 00:57:08 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_80000-85000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 19 polynomials, added 1 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.610000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_30000-35000 as ok (35.0% => ETA Fri Nov 20 00:57:02 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_85000-90000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 24 polynomials, added 2 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.600000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_35000-40000 as ok (40.0% => ETA Fri Nov 20 00:56:58 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_90000-95000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_45000-50000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_50000-55000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_55000-60000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 21 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_40000-45000 as ok (45.0% => ETA Fri Nov 20 00:56:59 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Adding workunit c80_polyselect1_95000-100000 to database
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 21 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_45000-50000 as ok (50.0% => ETA Fri Nov 20 00:56:56 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 8 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_50000-55000 as ok (55.0% => ETA Fri Nov 20 00:56:54 2026)
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_60000-65000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_65000-70000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 19 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_55000-60000 as ok (60.0% => ETA Fri Nov 20 00:56:54 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 23 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_60000-65000 as ok (65.0% => ETA Fri Nov 20 00:56:52 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 16 polynomials, added 1 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.590000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_65000-70000 as ok (70.0% => ETA Fri Nov 20 00:56:50 2026)
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_70000-75000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_75000-80000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_80000-85000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 23 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_70000-75000 as ok (75.0% => ETA Fri Nov 20 00:56:51 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 12 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_75000-80000 as ok (80.0% => ETA Fri Nov 20 00:56:50 2026)
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_85000-90000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_90000-95000 to client localhost
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect1_95000-100000 to client localhost
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 18 polynomials, added 1 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.550000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_80000-85000 as ok (85.0% => ETA Fri Nov 20 00:56:51 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 22 polynomials, added 2 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 24.490000
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_85000-90000 as ok (90.0% => ETA Fri Nov 20 00:56:50 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 18 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_90000-95000 as ok (95.0% => ETA Fri Nov 20 00:56:49 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Parsed 32 polynomials, added 0 to priority queue (has 20)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Marking workunit c80_polyselect1_95000-100000 as ok (100.0% => ETA Fri Nov 20 00:56:48 2026)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Finished
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Polynomial Selection (size optimized)
+[32;1mInfo[0m:Polynomial Selection (size optimized): Aggregate statistics:
+[32;1mInfo[0m:Polynomial Selection (size optimized): potential collisions: 637.94
+[32;1mInfo[0m:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 584/26.720/29.834/31.200/0.674
+[32;1mInfo[0m:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 392/26.060/28.823/30.910/0.938
+[32;1mInfo[0m:Polynomial Selection (size optimized): Total time: 12.04
+[32;1mInfo[0m:Polynomial Selection (root optimized): Starting
+[32;1mInfo[0m:Polynomial Selection (root optimized): No polynomial was previously found
+[32;1mInfo[0m:Polynomial Selection (root optimized): Adding workunit c80_polyselect2_0-1 to database
+[32;1mInfo[0m:Polynomial Selection (root optimized): Adding workunit c80_polyselect2_6-7 to database
+[32;1mInfo[0m:Polynomial Selection (root optimized): Adding workunit c80_polyselect2_12-13 to database
+[32;1mInfo[0m:Polynomial Selection (root optimized): Adding workunit c80_polyselect2_18-19 to database
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect2_0-1 to client localhost
+[32;1mInfo[0m:API server: got request for file polyselect_ropt, which resolves to /home/hatch/workspace/cado-factor/src/build/htch-runtime/polyselect/polyselect_ropt
+[32;1mInfo[0m:API server: got request for file c80.polyselect2.raw_0, which resolves to /home/hatch/workspace/cado-factor/work/calib80/c80.polyselect2.raw_0
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect2_6-7 to client localhost
+[32;1mInfo[0m:API server: got request for file c80.polyselect2.raw_6, which resolves to /home/hatch/workspace/cado-factor/work/calib80/c80.polyselect2.raw_6
+[32;1mInfo[0m:Polynomial Selection (root optimized): New best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_0: Murphy E = 2.690e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): New best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_0: Murphy E = 3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_0 with E=2.364e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_0 with E=2.577e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_0 with E=2.245e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_0 with E=3.023e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Marking workunit c80_polyselect2_0-1 as ok (10.0% => ETA Unknown)
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect2_12-13 to client localhost
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_6 with E=1.828e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_6 with E=2.865e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_6 with E=3.008e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_6 with E=2.486e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_6 with E=2.963e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_6 with E=2.624e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Marking workunit c80_polyselect2_6-7 as ok (40.0% => ETA Fri Nov 20 00:57:18 2026)
+[32;1mInfo[0m:API server: got request for file c80.polyselect2.raw_12, which resolves to /home/hatch/workspace/cado-factor/work/calib80/c80.polyselect2.raw_12
+[32;1mInfo[0m:API server: Sending workunit c80_polyselect2_18-19 to client localhost
+[32;1mInfo[0m:API server: got request for file c80.polyselect2.raw_18, which resolves to /home/hatch/workspace/cado-factor/work/calib80/c80.polyselect2.raw_18
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_12 with E=2.431e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_12 with E=2.405e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_12 with E=2.621e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_12 with E=2.554e-06 is no better than current best with E=3.040e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): New best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_12: Murphy E = 3.817e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_12 with E=2.307e-06 is no better than current best with E=3.817e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Marking workunit c80_polyselect2_12-13 as ok (70.0% => ETA Fri Nov 20 00:57:10 2026)
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_18 with E=1.755e-06 is no better than current best with E=3.817e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial from file /home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.polyselect2.opt_18 with E=2.480e-06 is no better than current best with E=3.817e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Marking workunit c80_polyselect2_18-19 as ok (100.0% => ETA Fri Nov 20 00:57:05 2026)
+[32;1mInfo[0m:Polynomial Selection (root optimized): Kept 1 polynomials with MurphyE from 3.817e-06 to 3.817e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Polynomial /home/hatch/workspace/cado-factor/work/calib80/c80.poly.0 had MurphyE 3.817e-06, refined to 3.835e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial is /home/hatch/workspace/cado-factor/work/calib80/c80.poly.0
+[32;1mInfo[0m:Polynomial Selection (root optimized): Finished, best polynomial has Murphy_E = 3.817e-06
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best polynomial is:
+n: 16722372257131115877945740911896196316950319396248402582614721355820926608175453
+skew: 32970.163
+c0: -873292879174574316881
+c1: -57662451658385535
+c2: 400845706952
+c3: -28745904
+c4: 1080
+Y0: -14711544509181674408
+Y1: 4629704449841
+# MurphyE (Bf=2.097e+06,Bg=2.097e+06,area=1.397e+11) = 3.817e-06
+# f(x) = 1080*x^4-28745904*x^3+400845706952*x^2-57662451658385535*x-873292879174574316881
+# g(x) = 4629704449841*x-14711544509181674408
+
+[32;1mInfo[0m:Polynomial Selection (root optimized): Best overall polynomial was 0-th in list after size optimization
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Polynomial Selection (root optimized)
+[32;1mInfo[0m:Polynomial Selection (root optimized): Aggregate statistics:
+[32;1mInfo[0m:Polynomial Selection (root optimized): Total time: 15.59
+[32;1mInfo[0m:Polynomial Selection (root optimized): Rootsieve time: 15.42
+[32;1mInfo[0m:Generate Factor Base: Starting
+[32;1mInfo[0m:Generate Factor Base: Finished
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Generate Factor Base
+[32;1mInfo[0m:Generate Factor Base: Total cpu/real time for makefb: 0.16/0.108373
+[32;1mInfo[0m:Generate Free Relations: Starting
+[32;1mInfo[0m:Generate Free Relations: Found 6625 free relations
+[32;1mInfo[0m:Generate Free Relations: Finished
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Generate Free Relations
+[32;1mInfo[0m:Generate Free Relations: Total cpu/real time for freerel: 1.15/0.915327
+[32;1mInfo[0m:Lattice Sieving: Starting
+[32;1mInfo[0m:Lattice Sieving: We want 233399 relation(s)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_66606-70000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_70000-75000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_75000-80000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_80000-85000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_85000-90000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_90000-95000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_95000-100000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_100000-105000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_105000-110000 to database
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_110000-115000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_66606-70000 to client localhost
+[32;1mInfo[0m:API server: got request for file las, which resolves to /home/hatch/workspace/cado-factor/src/build/htch-runtime/sieve/las
+[32;1mInfo[0m:API server: got request for file c80.roots1.gz, which resolves to /home/hatch/workspace/cado-factor/work/calib80/c80.roots1.gz
+[32;1mInfo[0m:API server: got request for file c80.poly, which resolves to /home/hatch/workspace/cado-factor/work/calib80/c80.poly
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_115000-120000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_70000-75000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 18020 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.66606-70000.gz', total is now 18020/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_66606-70000 as ok (7.7% => ETA Unknown)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_120000-125000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_75000-80000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 25560 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.70000-75000.gz', total is now 43580/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_70000-75000 as ok (18.7% => ETA Fri Nov 20 01:06:05 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_125000-130000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_80000-85000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 27797 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.75000-80000.gz', total is now 71377/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_75000-80000 as ok (30.6% => ETA Fri Nov 20 01:03:58 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_130000-135000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_85000-90000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 27098 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.80000-85000.gz', total is now 98475/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_80000-85000 as ok (42.2% => ETA Fri Nov 20 01:03:17 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_135000-140000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_90000-95000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 24281 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.85000-90000.gz', total is now 122756/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_85000-90000 as ok (52.6% => ETA Fri Nov 20 01:03:00 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_140000-145000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_95000-100000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 23813 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.90000-95000.gz', total is now 146569/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_90000-95000 as ok (62.8% => ETA Fri Nov 20 01:02:53 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_145000-150000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_100000-105000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 22602 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.95000-100000.gz', total is now 169171/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_95000-100000 as ok (72.5% => ETA Fri Nov 20 01:02:46 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_150000-155000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_105000-110000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 21652 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.100000-105000.gz', total is now 190823/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_100000-105000 as ok (81.8% => ETA Fri Nov 20 01:02:43 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_155000-160000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_110000-115000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 22182 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.105000-110000.gz', total is now 213005/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_105000-110000 as ok (91.3% => ETA Fri Nov 20 01:02:41 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_160000-165000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_115000-120000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 19137 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.110000-115000.gz', total is now 232142/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_110000-115000 as ok (99.5% => ETA Fri Nov 20 01:02:39 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_165000-170000 to database
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_120000-125000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 21090 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.115000-120000.gz', total is now 253232/233399
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_115000-120000 as ok (108.5% => ETA Fri Nov 20 01:02:38 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_170000-175000 to database
+[32;1mInfo[0m:Lattice Sieving: Reached target of 233399 relations, now have 253232
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Lattice Sieving
+[32;1mInfo[0m:Lattice Sieving: Aggregate statistics:
+[32;1mInfo[0m:Lattice Sieving: Total number of relations: 253232
+[32;1mInfo[0m:Lattice Sieving: Average J: 1023.91 for 4620 special-q, max bucket fill -bkmult 1.0,1s:1.318000
+[32;1mInfo[0m:Lattice Sieving: Total time: 356.2s
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Starting
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Splitting 11 new files
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Relations per slice: 0: 126408, 1: 126824
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Duplicate Removal, splitting pass
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 1.41/2.80494
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 2.7s
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Starting
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 109857 unique relations remain on slice 0
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 110153 unique relations remain on slice 1
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Of 253232 newly added relations 220010 were unique (ratio 0.868808)
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 220010 unique relations remain in total
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Duplicate Removal, removal pass
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 4.49/5.99897
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 5.199999999999999s
+[32;1mInfo[0m:Filtering - Singleton removal: Starting
+[32;1mInfo[0m:Filtering - Singleton removal: Reading 220010 unique and 6625 free relations, total 226635
+[33;1mWarning[0m:Command: Process with PID 47731 finished with return code 2
+[32;1mInfo[0m:Filtering - Singleton removal: After purge, 104886 relations with 118135 primes remain with excess -13249
+[32;1mInfo[0m:Filtering - Singleton removal: Not enough relations
+[32;1mInfo[0m:Filtering - Singleton removal: Requesting 13249 additional relations
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Got request for 233259 (13249 additional) output relations, estimate 268481 (15249 additional) needed in input
+[32;1mInfo[0m:Lattice Sieving: New goal for number of relations is 268481, currently have 253232. Need to sieve more
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Singleton removal
+[32;1mInfo[0m:Filtering - Singleton removal: Total cpu/real time for purge: 0.68/1.33159
+[32;1mInfo[0m:Lattice Sieving: Starting
+[32;1mInfo[0m:Lattice Sieving: We want 268481 relation(s)
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_125000-130000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 24907 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.120000-125000.gz', total is now 278139/268481
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_120000-125000 as ok (103.6% => ETA Fri Nov 20 01:03:36 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_175000-180000 to database
+[32;1mInfo[0m:Lattice Sieving: Reached target of 268481 relations, now have 278139
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Lattice Sieving
+[32;1mInfo[0m:Lattice Sieving: Aggregate statistics:
+[32;1mInfo[0m:Lattice Sieving: Total number of relations: 278139
+[32;1mInfo[0m:Lattice Sieving: Average J: 1023.82 for 5120 special-q, max bucket fill -bkmult 1.0,1s:1.318000
+[32;1mInfo[0m:Lattice Sieving: Total time: 399.2s
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Starting
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Splitting 1 new files
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Relations per slice: 0: 138835, 1: 139304
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Duplicate Removal, splitting pass
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 1.56/3.08749
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 2.9000000000000004s
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Starting
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 119440 unique relations remain on slice 0
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 119729 unique relations remain on slice 1
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Of 24907 newly added relations 19159 were unique (ratio 0.769222)
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 239169 unique relations remain in total
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Duplicate Removal, removal pass
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 5.64/8.38706
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 6.8s
+[32;1mInfo[0m:Filtering - Singleton removal: Starting
+[32;1mInfo[0m:Filtering - Singleton removal: Reading 239169 unique and 6625 free relations, total 245794
+[33;1mWarning[0m:Command: Process with PID 47932 finished with return code 2
+[32;1mInfo[0m:Filtering - Singleton removal: After purge, 137718 relations with 141267 primes remain with excess -3549
+[32;1mInfo[0m:Filtering - Singleton removal: Not enough relations
+[32;1mInfo[0m:Filtering - Singleton removal: Requesting 10000 additional relations
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Got request for 249169 (10000 additional) output relations, estimate 291139 (13000 additional) needed in input
+[32;1mInfo[0m:Lattice Sieving: New goal for number of relations is 291139, currently have 278139. Need to sieve more
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Singleton removal
+[32;1mInfo[0m:Filtering - Singleton removal: Total cpu/real time for purge: 1.42/2.79551
+[32;1mInfo[0m:Lattice Sieving: Starting
+[32;1mInfo[0m:Lattice Sieving: We want 291139 relation(s)
+[32;1mInfo[0m:API server: Sending workunit c80_sieving_130000-135000 to client localhost
+[32;1mInfo[0m:Lattice Sieving: Found 19249 relations in '/home/hatch/workspace/cado-factor/work/calib80/c80.upload/c80.125000-130000.gz', total is now 297388/291139
+[32;1mInfo[0m:Lattice Sieving: Marking workunit c80_sieving_125000-130000 as ok (102.1% => ETA Fri Nov 20 01:04:13 2026)
+[32;1mInfo[0m:Lattice Sieving: Adding workunit c80_sieving_180000-185000 to database
+[32;1mInfo[0m:Lattice Sieving: Reached target of 291139 relations, now have 297388
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Lattice Sieving
+[32;1mInfo[0m:Lattice Sieving: Aggregate statistics:
+[32;1mInfo[0m:Lattice Sieving: Total number of relations: 297388
+[32;1mInfo[0m:Lattice Sieving: Average J: 1023.69 for 5513 special-q, max bucket fill -bkmult 1.0,1s:1.318000
+[32;1mInfo[0m:Lattice Sieving: Total time: 429.63s
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Starting
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Splitting 1 new files
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Relations per slice: 0: 148440, 1: 148948
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Duplicate Removal, splitting pass
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 1.66/3.34553
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 3.1000000000000005s
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Starting
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 126755 unique relations remain on slice 0
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 127000 unique relations remain on slice 1
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Of 19249 newly added relations 14586 were unique (ratio 0.757754)
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: 253755 unique relations remain in total
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Duplicate Removal, removal pass
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 6.9/11.0726
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 8.700000000000001s
+[32;1mInfo[0m:Filtering - Singleton removal: Starting
+[32;1mInfo[0m:Filtering - Singleton removal: Reading 253755 unique and 6625 free relations, total 260380
+[32;1mInfo[0m:Filtering - Singleton removal: After purge, 128450 relations with 128290 primes remain with weight 9100781 and excess 160
+[32;1mInfo[0m:Filtering - Singleton removal: Have enough relations
+[32;1mInfo[0m:API server: Got notification to stop serving Workunits
+[32;1mInfo[0m:Lattice Sieving: Cancelling remaining workunits
+[32;1mInfo[0m:Client Launcher: Stopped client localhost (Host localhost, PID 46275)
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Singleton removal
+[32;1mInfo[0m:Filtering - Singleton removal: Total cpu/real time for purge: 3.53/7.10972
+[32;1mInfo[0m:Filtering - Merging: Starting
+[32;1mInfo[0m:Filtering - Merging: Merged matrix has 28522 rows and total weight 4860870 (170.4 entries per row on average)
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Filtering - Merging
+[32;1mInfo[0m:Filtering - Merging: Total cpu/real time for merge: 6.37/5.18664
+[32;1mInfo[0m:Filtering - Merging: Total cpu/real time for replay: 1.38/1.53546
+[32;1mInfo[0m:Linear Algebra: Starting
+[32;1mInfo[0m:Linear Algebra: krylov: N=64 ; ETA (N=960): Fri Nov 20 01:04:47 2026 [0.005 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=128 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=192 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=256 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=320 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=384 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=448 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=512 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=576 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=640 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=704 ; ETA (N=960): Fri Nov 20 01:04:47 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=768 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=832 ; ETA (N=960): Fri Nov 20 01:04:46 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=896 ; ETA (N=960): Fri Nov 20 01:04:47 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: krylov: N=960 ; ETA (N=960): Fri Nov 20 01:04:47 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: lingen ETA: not available yet
+[32;1mInfo[0m:Linear Algebra: lingen ETA: Fri Nov 20 01:04:48 2026
+[32;1mInfo[0m:Linear Algebra: mksol: N=64 ; ETA (N=448): Fri Nov 20 01:04:50 2026 [0.004 s/iter]
+[32;1mInfo[0m:Linear Algebra: mksol: N=128 ; ETA (N=448): Fri Nov 20 01:04:50 2026 [0.005 s/iter]
+[32;1mInfo[0m:Linear Algebra: mksol: N=192 ; ETA (N=448): Fri Nov 20 01:04:51 2026 [0.005 s/iter]
+[32;1mInfo[0m:Linear Algebra: mksol: N=256 ; ETA (N=448): Fri Nov 20 01:04:50 2026 [0.005 s/iter]
+[32;1mInfo[0m:Linear Algebra: mksol: N=320 ; ETA (N=448): Fri Nov 20 01:04:50 2026 [0.005 s/iter]
+[32;1mInfo[0m:Linear Algebra: mksol: N=384 ; ETA (N=448): Fri Nov 20 01:04:51 2026 [0.005 s/iter]
+[32;1mInfo[0m:Linear Algebra: mksol: N=444 ; ETA (N=448): Fri Nov 20 01:04:51 2026 [0.005 s/iter]
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Linear Algebra
+[32;1mInfo[0m:Linear Algebra: Total cpu/real time for bwc: 12.09/10.97
+[32;1mInfo[0m:Linear Algebra: Aggregate statistics:
+[32;1mInfo[0m:Linear Algebra: Krylov: CPU time 6.04, WCT time 4.77, iteration CPU time 0, COMM 0.0, cpu-wait 0.0, comm-wait 0.0 (960 iterations)
+[32;1mInfo[0m:Linear Algebra: Lingen CPU time 1.36, WCT time 1.35
+[32;1mInfo[0m:Linear Algebra: Mksol: CPU time 3.41,  WCT time 2.74, iteration CPU time 0, COMM 0.0, cpu-wait 0.0, comm-wait 0.0 (448 iterations)
+[32;1mInfo[0m:Quadratic Characters: Starting
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Quadratic Characters
+[32;1mInfo[0m:Quadratic Characters: Total cpu/real time for characters: 1.33/1.40047
+[32;1mInfo[0m:Square Root: Starting
+[32;1mInfo[0m:Square Root: Creating file of (a,b) values
+[32;1mInfo[0m:Square Root: finished
+[32;1mInfo[0m:Square Root: Factors: 3646145125719001888002753562073855374079 4586315596484532772155328562582497331107
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Square Root
+[32;1mInfo[0m:Square Root: Total cpu/real time for sqrt: 4.71/3.98137
+[32;1mInfo[0m:API server: Got notification to stop serving Workunits
+[32;1mInfo[0m:Polynomial Selection (root optimized): Aggregate statistics:
+[32;1mInfo[0m:Polynomial Selection (root optimized): Total time: 15.59
+[32;1mInfo[0m:Polynomial Selection (root optimized): Rootsieve time: 15.42
+[32;1mInfo[0m:Generate Factor Base: Total cpu/real time for makefb: 0.16/0.108373
+[32;1mInfo[0m:Polynomial Selection (size optimized): Aggregate statistics:
+[32;1mInfo[0m:Polynomial Selection (size optimized): potential collisions: 637.94
+[32;1mInfo[0m:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 584/26.720/29.834/31.200/0.674
+[32;1mInfo[0m:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 392/26.060/28.823/30.910/0.938
+[32;1mInfo[0m:Polynomial Selection (size optimized): Total time: 12.04
+[32;1mInfo[0m:Quadratic Characters: Total cpu/real time for characters: 1.33/1.40047
+[32;1mInfo[0m:Square Root: Total cpu/real time for sqrt: 4.71/3.98137
+[32;1mInfo[0m:Linear Algebra: Total cpu/real time for bwc: 12.09/10.97
+[32;1mInfo[0m:Linear Algebra: Aggregate statistics:
+[32;1mInfo[0m:Linear Algebra: Krylov: CPU time 6.04, WCT time 4.77, iteration CPU time 0, COMM 0.0, cpu-wait 0.0, comm-wait 0.0 (960 iterations)
+[32;1mInfo[0m:Linear Algebra: Lingen CPU time 1.36, WCT time 1.35
+[32;1mInfo[0m:Linear Algebra: Mksol: CPU time 3.41,  WCT time 2.74, iteration CPU time 0, COMM 0.0, cpu-wait 0.0, comm-wait 0.0 (448 iterations)
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 6.9/11.0726
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 8.700000000000001s
+[32;1mInfo[0m:Filtering - Singleton removal: Total cpu/real time for purge: 3.53/7.10972
+[32;1mInfo[0m:Filtering - Merging: Total cpu/real time for merge: 6.37/5.18664
+[32;1mInfo[0m:Filtering - Merging: Total cpu/real time for replay: 1.38/1.53546
+[32;1mInfo[0m:Generate Free Relations: Total cpu/real time for freerel: 1.15/0.915327
+[32;1mInfo[0m:Lattice Sieving: Aggregate statistics:
+[32;1mInfo[0m:Lattice Sieving: Total number of relations: 297388
+[32;1mInfo[0m:Lattice Sieving: Average J: 1023.69 for 5513 special-q, max bucket fill -bkmult 1.0,1s:1.318000
+[32;1mInfo[0m:Lattice Sieving: Total time: 429.63s
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 1.66/3.34553
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+[32;1mInfo[0m:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 3.1000000000000005s
+[32;1mInfo[0m:API server: Shutting down server
+[32;1mInfo[0m:Complete Factorization / Discrete logarithm / Class group: Total cpu/elapsed time for entire Complete Factorization 547.51/511.757
+3646145125719001888002753562073855374079 4586315596484532772155328562582497331107
