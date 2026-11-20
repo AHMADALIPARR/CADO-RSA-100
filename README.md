@@ -131,14 +131,17 @@ relation files.
 
 ## Licensing
 
-This repository carries no LICENSE file. The driver (`dag.py`), the
-documentation (`README.md`, `PAPER.md`, `DAG.md`, `STATUS.md`), and
-the run evidence (logs, factors, verification) are the owner's work.
-CADO-NFS itself is the work of INRIA, licensed under the GNU Lesser
-General Public License version 2.1, and it is referenced here by its
-commit hash, not vendored: fetch it from the project's repository and
-build it with the steps above. The RSA-Prime cross-check code is the
-owner's work, referenced from its own repository, not copied in.
+The driver (`dag.py`), the documentation (`README.md`, `PAPER.md`,
+`DAG.md`, `STATUS.md`), and the run evidence (logs, factors,
+verification) are the owner's work, under the SNAPKITTY OPAQUE SOURCE
+LICENSE v1.0 in `LICENSE` (SPDX
+`LicenseRef-Sovereign-Leviathan-SL-AGPL3-001`, Copyright © 2026
+SnapKitty West). CADO-NFS itself is the work of INRIA, licensed under
+the GNU Lesser General Public License version 2.1, and it is referenced
+here by its commit hash, not vendored: fetch it from the project's
+repository and build it with the steps above. The RSA-Prime cross-check
+code is the owner's work, referenced from its own repository, not copied
+in.
 
 ## Files
 
