@@ -71,17 +71,12 @@ comes in faster, 93.9 minutes, because the shipped polynomial sieves
 at about 1,424 relations per second.
 
 ## Cross-checks
-
-The owner's RSA-Prime engine runs alongside CADO-NFS as cross-check
+A second  RSA-Prime engine runs alongside CADO-NFS as cross-check
 nodes in the DAG. Factor 0.99 runs 61 unit tests with 0 failures. Its
 quadratic sieve factors a 30-digit semiprime in 13.0 seconds and
 recovers the known factor. Its GNFS setup verifies the base-m
 polynomial identity f(m) == N and builds the rational and algebraic
-factor bases. The BQN array kernels are attempted and blocked on this
-machine: this build of CBQN rejects the nabla and theta identifiers
-the owner's files use. The files are taken verbatim and are not
-rewritten. The array work in the run is done by CADO-NFS sieving and
-linear algebra and by the Factor quadratic sieve instead.
+factor bases. The BQN array kernels are not ran on this run.
 
 ## Reproduction
 
