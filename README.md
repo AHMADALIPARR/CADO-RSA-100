@@ -1,142 +1,115 @@
-# CADO-NFS RUN
+<div align="center">
+  <img src="assets/gnfs-pipeline.svg" alt="GNFS pipeline: RSA-100 through polynomial selection, sieving, filtering, linear algebra, and independent verification" width="100%">
+  <br>
+  <h1>CADO-NFS · RSA-100</h1>
+  <p><strong>A verified, end-to-end GNFS reproduction on a small CPU-only machine.</strong></p>
+  <p>
+    <a href="https://github.com/AHMADALIPARR/CADO-RSA-100"><img src="https://img.shields.io/github/stars/AHMADALIPARR/CADO-RSA-100?style=for-the-badge&color=f5c451" alt="GitHub stars"></a>
+    <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12">
+    <img src="https://img.shields.io/badge/CADO--NFS-GNFS-5568d9?style=for-the-badge" alt="CADO-NFS GNFS">
+    <img src="https://img.shields.io/badge/result-independently%20verified-168f72?style=for-the-badge" alt="Result independently verified">
+    <img src="https://img.shields.io/badge/scope-public%20challenge%20numbers-64748b?style=for-the-badge" alt="Public challenge numbers only">
+  </p>
+</div>
 
-CADO-NFS RUN factors RSA challenge numbers on a small box. It builds
-CADO-NFS from source, drives the General Number Field Sieve through a
-recursive DAG, and verifies the factors by independent multiplication.
-The run it documents is RSA-100, factored on a 1.5-CPU virtual machine
-with no GPU in 5,632 seconds of wall time.
+> **The result:** RSA-100 was factored in **5,632 seconds (93.9 minutes)** on a Linux VM with **1.5 shared CPUs, about 6 GB RAM, and no GPU**. The two recovered factors multiply to the target exactly, pass deterministic primality checks, and match the factors published in 1991. This is a reproduction of known public research—not a new factoring record.
 
-## The result
+## At a glance
 
-RSA-100 is a 100-digit (330-bit) semiprime from the RSA Factoring
-Challenge, first factored in 1991. This run reproduces that
-factorization and verifies it:
+| | Run details |
+|---|---|
+| Target | RSA-100 · 100 decimal digits · 330 bits |
+| Method | General Number Field Sieve (GNFS), using [CADO-NFS](https://gitlab.inria.fr/cado-nfs/cado-nfs) |
+| Orchestration | `dag.py`, a resumable recursive DAG driver |
+| Successful wall time | **5,632 s / 93.9 min** |
+| Sieving | **6,776,932 relations** across **246 q-intervals** |
+| Machine | Linux VM · 1.5 shared CPUs · ~6 GB RAM · no GPU |
+| Verification | Exact multiplication, deterministic Miller–Rabin, comparison with published factors |
+| Status | Complete; verified reproduction |
 
-- 37975227936943673922808872755445627854565536638199
-- 40094690950920881030683735292761468389214899724061
+## The verified result
 
-Both factors are 50 digits. Their product equals RSA-100 exactly,
-both are prime, and both match the published 1991 factors. This is a
-verified reproduction at a scale this box owns, not a world record.
-The full timings, relation counts, and verification are in
-`work/rsa100/factors.txt`, `work/rsa100/verify.txt`, and `STATUS.md`.
-The technical paper is `PAPER.md`.
+The public RSA-100 challenge integer is:
 
-## How the run works
+```text
+1522605027922533360535618378132637429718068114961380688657908494580122963258952897654000350692006139
+```
 
-`dag.py` is a small recursive DAG driver. The top level is the GNFS
-pipeline as a DAG: polynomial selection, factor base, free relations,
-sieving, filtering, linear algebra, square root, verification. Each
-stage decomposes into its own sub-DAG of independent tasks. Sieving
-splits into independent q-interval nodes. Polynomial selection splits
-into independent admin-range chunks. Duplicate removal splits into one
-node per slice. Square root splits into one node per kernel
-dependency. The graph is topologically ordered, each node is computed
-once from its predecessors, and independent nodes in the same layer
-run in parallel (2 workers on this box). `DAG.md` documents the
-structure, the stages, and the sub-DAGs.
+Its factors are:
 
-The filter stage runs as an iterated loop. Purge reports the relation
-count and the distinct-prime count after each pass. When the matrix
-sits below the percolation threshold, the driver estimates the total
-relations the matrix needs with an occupancy model, sieves the
-shortfall, and re-filters. The loop re-measures and re-fits each
-round, up to 25 rounds, until purge succeeds. For RSA-100 the first
-filter pass reads 2,762,542 unique relations against 3,459,675
-distinct primes and does not reach the threshold; the loop estimates
-6,771,450 total relations, sieves to 6,776,932, and the second pass
-succeeds with a 351,341 by 351,191 matrix at excess +150.
+```text
+37975227936943673922808872755445627854565536638199
+40094690950920881030683735292761468389214899724061
+```
 
-CADO-NFS itself is not rewritten. The driver invokes its binaries
-directly, using the exact command patterns the project's own driver
-uses. The polynomial for RSA-100 is CADO-NFS's own shipped
-polynomial for the c100 parameter set.
+Each factor is 50 digits. The run verifies that their product equals RSA-100 exactly and that both factors are prime. These are the factors first published in 1991; the project reproduces a known result.
 
-## Calibration
+## How it works
 
-Two calibration factorizations run first and verify by
-multiplication:
+`dag.py` represents the GNFS workflow as dependent stages and expands stages into parallel task groups when useful. It invokes CADO-NFS tools directly; it does not rewrite CADO-NFS.
 
-- 59 digits (the CADO-NFS README example): 66 seconds wall, 54,305
-  relations, four 15-digit prime factors, product equals N, all prime.
-- 80 digits (a synthetic semiprime generated locally): 517 seconds
-  wall, 297,388 relations at 692 relations per second, exact factors
-  recovered, product equals N, both prime.
+| Stage | What happens |
+|---|---|
+| Polynomial | Uses CADO-NFS's shipped `c100.poly` for the target run |
+| Factor base & free relations | Prepares data needed by the sieve |
+| Sieving | Runs independent q-interval tasks; resumes from existing relation files and adds work until enough relations are available |
+| Filtering | Deduplicates and filters relations; estimates and sieves additional relations if purge needs them |
+| Linear algebra | Uses CADO-NFS block Wiedemann (`bwc.pl`) |
+| Square root | Tests kernel dependencies to recover factors |
+| Verification | Independently checks the product and primality before accepting the result |
 
-The DAG driver reproduces the 59-digit calibration exactly (58
-seconds, the same four factors). The RSA-100 sizing follows from the
-80-digit run: L-notation puts RSA-100 at about 36 times the 80-digit
-effort, about 5.2 hours at the calibration rate. The measured run
-comes in faster, 93.9 minutes, because the shipped polynomial sieves
-at about 1,424 relations per second.
+Independent tasks run in parallel, with two workers in the documented run. Outputs and logs are kept in the work directory so a run can resume from completed work. See [`DAG.md`](DAG.md) for the DAG structure and [`PAPER.md`](PAPER.md) for the full methods and measurements.
 
-## Cross-checks
-A second  RSA-Prime engine runs alongside CADO-NFS as cross-check
-nodes in the DAG. Factor 0.99 runs 61 unit tests with 0 failures. Its
-quadratic sieve factors a 30-digit semiprime in 13.0 seconds and
-recovers the known factor. Its GNFS setup verifies the base-m
-polynomial identity f(m) == N and builds the rational and algebraic
-factor bases. The BQN array kernels are not ran on this run.
+## Reproduce the run
 
-## Reproduction
+### Requirements
 
-Environment: Linux, 1.5 shared CPUs, about 6 GB RAM, no GPU,
-Python 3.12, cmake 3.28, gcc and g++ 13.3, GMP runtime and headers.
+A Linux environment with Python 3, C/C++ build tools, CMake, and GMP development files. The documented environment used Python 3.12, CMake 3.28.3, GCC/G++ 13.3.0, and `make -j2`. Resource use and run time depend heavily on the machine.
 
-1. Fetch CADO-NFS at the pinned commit:
-   `git clone https://gitlab.inria.fr/cado-nfs/cado-nfs`, commit
-   692ecb7e62f0f3bdab88ee44cc60b8ded0ea1a1b (2026-10-02).
-2. Build it: `make -j2` from the CADO-NFS source. The build takes
-   about 47 minutes on this box. The binaries land in
-   `build/<hostname>/`.
-3. Run the DAG driver:
-   `python3 dag.py --params <path>/parameters/factor/params.c100
-   --n <RSA-100> --workdir work/rsa100
-   --bindir <path>/build/<hostname> --threads 2
-   --poly <path>/parameters/polynomials/c100.poly`
-4. Verify: `work/rsa100/factors.txt` holds N and the two factors;
-   `work/rsa100/verify.txt` holds the product check and the
-   primality check.
+### Build CADO-NFS
 
-The driver resumes from completed stages. A stage whose output
-already exists is skipped, and sieving resumes from the existing
-relation files.
+```bash
+git clone https://gitlab.inria.fr/cado-nfs/cado-nfs.git
+cd cado-nfs
+git checkout 692ecb7e62f0f3bdab88ee44cc60b8ded0ea1a1b
+make -j2
+```
 
-## Limits
+### Run the RSA-100 DAG
 
-- This is a verified reproduction, not a world record. RSA-100 was
-  first factored in 1991. The public record stands at RSA-270 (895
-  bits, November 2026).
-- Scope is synthetic keys and public RSA challenge numbers only. No
-  real third-party keys, certificates, or traffic. No claim of
-  breaking a secure deployed modulus. RSA-2048 is not affected.
-- Sieving dominates the run: about 5,300 seconds of the 5,632
-  seconds, roughly 94 percent. It is the embarrassingly parallel
-  part and the clear candidate for a GPU port. RSA-110 is about 200
-  times the 80-digit effort, about 29 hours on this box, so it
-  belongs on a GPU machine, not here.
-- The BQN array kernels are not ran which is the main thing powering the DAG.
+From this repository, replace `<CADO_NFS>` with the CADO-NFS checkout path and `<BUILD_HOST>` with the build directory name (for example, `htch-runtime`):
+
+```bash
+python3 dag.py \
+  --params <CADO_NFS>/parameters/factor/params.c100 \
+  --n 1522605027922533360535618378132637429718068114961380688657908494580122963258952897654000350692006139 \
+  --workdir work/rsa100 \
+  --bindir <CADO_NFS>/build/<BUILD_HOST> \
+  --threads 2 \
+  --poly <CADO_NFS>/parameters/polynomials/c100.poly
+```
+
+The `--poly` argument selects CADO-NFS's supplied polynomial for the c100 parameters and skips the expensive polynomial-selection stage. Re-running the command with the same work directory resumes from outputs already present. The completed run's factor and verification files are `work/rsa100/factors.txt` and `work/rsa100/verify.txt` (the large intermediate work data is not included in this repository).
+
+## Repository guide
+
+| Path | Contents |
+|---|---|
+| [`dag.py`](dag.py) | Recursive DAG orchestration driver |
+| [`DAG.md`](DAG.md) | Pipeline stages, sub-DAGs, and execution notes |
+| [`PAPER.md`](PAPER.md) | Detailed technical report, timings, methodology, and limitations |
+| [`STATUS.md`](STATUS.md) | Run status and evidence summary |
+| [`target-rsa100.txt`](target-rsa100.txt) | RSA-100 target and published factors |
+| [`calib80.txt`](calib80.txt) | Synthetic calibration target |
+| [`logs/`](logs/) | Run and calibration logs |
+| [`assets/gnfs-pipeline.svg`](assets/gnfs-pipeline.svg) | README pipeline illustration |
+
+## Scope and limitations
+
+This work concerns **public RSA challenge numbers and synthetic test inputs only**. It does not involve real third-party keys, certificates, or traffic, and it makes no claim to break deployed RSA keys. RSA-100 was already factored publicly in 1991; this run is a reproduction, not a discovery or record. The result does not change the security of RSA-2048.
+
+The measured timing is specific to one VM and one run. Sieving consumed roughly 94% of successful wall time, so results should not be generalized to other hardware or interpreted as a benchmark of modern systems.
+
 ## Licensing
 
-The driver (`dag.py`), the documentation (`README.md`, `PAPER.md`,
-`DAG.md`, `STATUS.md`), and the run evidence (logs, factors,
-verification) are the owner's work, under the SNAPKITTY OPAQUE SOURCE
-LICENSE v1.0 in `LICENSE` (SPDX
-`LicenseRef-Sovereign-Leviathan-SL-AGPL3-001`, Copyright © 2026
-SnapKitty West). CADO-NFS itself is the work of INRIA, licensed under
-the GNU Lesser General Public License version 2.1, and it is referenced
-here by its commit hash, not vendored: fetch it from the project's
-repository and build it with the steps above. The RSA-Prime cross-check
-code is the owner's work, referenced from its own repository, not copied
-in.
-
-## Files
-
-- `dag.py` — the recursive DAG driver
-- `DAG.md` — DAG structure, stages, sub-DAGs, cross-check nodes
-- `STATUS.md` — build, calibration, sizing, run timings, verification
-- `PAPER.md` — the technical paper documenting the run
-- `calib80.txt`, `target-rsa100.txt` — the calibration and target numbers
-- `logs/` — calibration, DAG validation, and RSA-100 run logs and timings
-- `logs-rsaprime-unit-tests.txt` — the Factor unit test output
-- `work/rsa100/factors.txt`, `work/rsa100/verify.txt` — the factors and verification
+The repository's driver, documentation, and run evidence are covered by the license described in [`LICENSE`](LICENSE). CADO-NFS is an external dependency, referenced by commit and distributed under its own license; see the upstream [CADO-NFS project](https://gitlab.inria.fr/cado-nfs/cado-nfs) and this repository's [`PAPER.md`](PAPER.md) for details.

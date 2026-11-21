@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">CADO-NFS GNFS factorization pipeline</title>
+  <desc id="desc">A staged workflow from RSA-100 input through polynomial selection, sieving, filtering, linear algebra, square root, and independent verification.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a35"/>
+      <stop offset="1" stop-color="#182c4d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#56d6c2"/>
+      <stop offset="1" stop-color="#7aa7ff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8ba9d1"/>
+    </marker>
+    <style>
+      .label { font: 600 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #f3f7ff; }
+      .small { font: 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #b6c8e3; }
+      .node { fill: #1d3153; stroke: #46658e; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1080" cy="42" r="100" fill="#294d79" opacity=".15"/>
+  <circle cx="75" cy="300" r="120" fill="#38bda9" opacity=".08"/>
+  <text x="56" y="58" class="small" letter-spacing="2">GENERAL NUMBER FIELD SIEVE · REPRODUCIBLE PIPELINE</text>
+  <text x="56" y="100" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#ffffff">From public challenge number to verified factors</text>
+  <path d="M215 205 H275 M395 205 H455 M575 205 H635 M755 205 H815 M935 205 H995" stroke="#8ba9d1" stroke-width="2" marker-end="url(#arrow)"/>
+  <g transform="translate(55 165)"><rect class="node" width="160" height="80" rx="14"/><text x="80" y="34" text-anchor="middle" class="label">RSA-100</text><text x="80" y="56" text-anchor="middle" class="small">100 digits · 330 bits</text></g>
+  <g transform="translate(275 165)"><rect class="node" width="120" height="80" rx="14"/><text x="60" y="38" text-anchor="middle" class="label">Polynomial</text><text x="60" y="58" text-anchor="middle" class="small">selection</text></g>
+  <g transform="translate(455 165)"><rect class="node" width="120" height="80" rx="14"/><text x="60" y="38" text-anchor="middle" class="label">Sieving</text><text x="60" y="58" text-anchor="middle" class="small">246 intervals</text></g>
+  <g transform="translate(635 165)"><rect class="node" width="120" height="80" rx="14"/><text x="60" y="38" text-anchor="middle" class="label">Filtering</text><text x="60" y="58" text-anchor="middle" class="small">sparse matrix</text></g>
+  <g transform="translate(815 165)"><rect class="node" width="120" height="80" rx="14"/><text x="60" y="38" text-anchor="middle" class="label">Linear algebra</text><text x="60" y="58" text-anchor="middle" class="small">block Wiedemann</text></g>
+  <g transform="translate(995 165)"><rect width="150" height="80" rx="14" fill="#173f48" stroke="url(#accent)" stroke-width="2"/><text x="75" y="38" text-anchor="middle" class="label">Verify ✓</text><text x="75" y="58" text-anchor="middle" class="small">product + primality</text></g>
+  <text x="56" y="286" class="small">CADO-NFS orchestrated by a resumable recursive DAG · two workers · no GPU</text>
+</svg>
